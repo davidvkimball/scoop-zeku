@@ -1,0 +1,36 @@
+{
+    "version": "0.1.19",
+    "description": "A calm place to write for your Astro site. 14-day free trial, then a one-time license.",
+    "homepage": "https://zeku.dev",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://zeku.dev/terms"
+    },
+    "notes": "Zeku keeps itself up to date, so 'scoop update zeku' is optional.",
+    "architecture": {
+        "64bit": {
+            "url": "https://releases.zeku.dev/download/Zeku_0.1.19_x64-setup.exe#/setup.exe",
+            "hash": "9eb77e319ebc70a638194a37d8359e76ebfd2d93aac29d7241dca783534f72e9"
+        }
+    },
+    "installer": {
+        "file": "setup.exe",
+        "args": [
+            "/S"
+        ]
+    },
+    "uninstaller": {
+        "script": "if (Test-Path \"$env:LOCALAPPDATA\\Zeku\\uninstall.exe\") { Start-Process -Wait \"$env:LOCALAPPDATA\\Zeku\\uninstall.exe\" -ArgumentList '/S' }"
+    },
+    "checkver": {
+        "url": "https://releases.zeku.dev/latest.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://releases.zeku.dev/download/Zeku_$version_x64-setup.exe#/setup.exe"
+            }
+        }
+    }
+}
