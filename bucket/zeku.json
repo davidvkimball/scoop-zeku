@@ -1,5 +1,5 @@
 {
-    "version": "0.1.29",
+    "version": "0.1.30",
     "description": "A calm place to write for your Astro site. 14-day free trial, then a one-time license.",
     "homepage": "https://zeku.dev",
     "license": {
@@ -9,8 +9,8 @@
     "notes": "Zeku keeps itself up to date, so 'scoop update zeku' is optional.",
     "architecture": {
         "64bit": {
-            "url": "https://releases.zeku.dev/download/Zeku_0.1.29_x64-setup.exe#/setup.exe",
-            "hash": "6fe757b899f8f41640014dae97ddcab6aa87837d321a8b7fadee1d73c0799b39"
+            "url": "https://releases.zeku.dev/download/Zeku_0.1.30_x64-setup.exe#/setup.exe",
+            "hash": "83fb786c299783f658bb4a700b21cb09c31e84dd0345b1a32d2f1c712454f8f7"
         }
     },
     "installer": {
